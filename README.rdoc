@@ -1,0 +1,11 @@
+== OFF URL
+Mess with your friends by making your URL's Offensive
+
+=== Minimum Requirements
+* Python
+* Django
+
+== Copyright
+
+Copyright (c) 2010 Kevin Postal. See LICENSE for details.
+
