@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="url_link">
+<label>Direct Link to picture : </label>
+<input type="text" size="55" onclick="this.select();" value="{{ link }}" />
+</div>
+
+<a href = "{{ link }}">{{ link }}</a>
+{% endblock %}

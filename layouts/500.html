@@ -1,0 +1,48 @@
+{% load analytics %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title> .:. Offensive URL Obfuscation Service provided by 2theleft</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="/static/css/base.css" />
+</head>
+
+<script language="javascript">
+$(document).ready(function() {
+	$("#id_link").focus(function() {
+		$(this).filter(function() {
+			return $(this).val() == "" || $(this).val() == "enter your url"
+        }).addClass("txtNormal").val("http://");
+
+    });
+	$("#id_link").blur(function() {
+
+        $(this).filter(function() {
+
+            return $(this).val() == ""
+
+        }).addClass("txtWatermark").val("enter your url");
+
+    });
+
+});
+</script>
+
+
+<body>
+<div align="center">
+	<h1 class="img">
+	    <a href="/">
+		</a>
+</h1>
+<h1>Hmm, the page you are looking for can't be found.</h1>
+    <div id ='dotted_line'>
+      <small><a href = "/" > Home </a>  </small>
+      <br> 
+    	<small>©2009 2theleft, Inc. </small>
+    </div>
+</div>
+</body>
+{% analytics %}
+</html>
