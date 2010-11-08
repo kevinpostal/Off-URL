@@ -1,4 +1,4 @@
-== OFF URL
+= OFF URL
 Mess with your friends by making your URL's Offensive
 
 === Minimum Requirements
